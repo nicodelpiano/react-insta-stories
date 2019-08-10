@@ -85,6 +85,7 @@ class Container extends React.PureComponent {
   render() {
     return (
       <div style={{ ...styles.container, ...{ width: this.width, height: this.height } }}>
+			  {this.props.header(this.story)}
         <ProgressArray
           next={this.next}
           pause={this.state.pause}
